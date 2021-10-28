@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior : smooth; scroll-behavior : smooth;
+}
+
+@layer base {
+ 
+    body {
+      @apply bg-gray-50  w-screen overflow-x-hidden min-h-screen text-gray-900 dark:text-gray-100 dark:bg-gray-900 transition-colors ease-in-out;
+    }
+    .snap-container{
+        scroll-snap-type: y mandatory ;
+        overflow-y:scroll;
+        scroll-behavior : smooth;
+    }
+    section {
+      @apply min-h-screen w-full p-4  pt-20   max-w-screen-lg mx-auto;
+      scroll-snap-align:center;
+    }
+    section > h1{
+        @apply text-2xl font-bold leading-relaxed ;
+    }
+    
+    #hero{
+      @apply lg:p-0
+    }
+  }
