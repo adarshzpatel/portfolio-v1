@@ -1,4 +1,4 @@
-const {coolGray, cyan, green, sky, white, black, red} = require('tailwindcss/colors')
+const {coolGray, cyan, green,purple, white, black, red, blue} = require('tailwindcss/colors')
 module.exports = {
   mode:'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -8,10 +8,11 @@ module.exports = {
       gray:coolGray,
       primary:cyan,
       green:green,
-      blue:sky,
+      blue:blue,
       white:white,
       black:black,
       red:red,
+      purple:purple
     },
     extend: {
       fontFamily:{

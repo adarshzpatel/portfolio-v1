@@ -2,7 +2,7 @@ const Container = ({ children }) => {
   return (
     <div
     
-      className="snap-container   h-screen w-screen flex flex-col  mx-auto "
+      className=" max-w-screen-md w-screen flex flex-col  mx-auto "
     >
       {children}
     </div>

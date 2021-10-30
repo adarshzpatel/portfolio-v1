@@ -26,15 +26,6 @@ const projects = [
         img:'/assets/tictactoe.jpg',
         github:'https://github.com/adarshzpatel/react-tic-tac-toe'
     },
-    {
-        id:4,
-        title:'Color Gen',
-        link:'https://color-genx.netlify.app/',
-        description:'Generate Random Colors with a click and copy hex code.',
-        tech:['HTML/CSS','JavaScript'],
-        img:'/assets/colorgen.jpg',
-        github:'https://github.com/adarshzpatel/color-gen'
-    }
 
 ]
 
