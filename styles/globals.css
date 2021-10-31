@@ -50,6 +50,6 @@ html{
     @apply bg-green-400 dark:bg-green-600 dark:text-green-50;
   }
   .btn-icon{
-    @apply flex hover:border-gray-600 focus:bg-gray-900 transition-all duration-200 ease-out focus:border-gray-900 focus:text-gray-50 gap-1 items-center text-sm font-medium rounded border py-1 px-2;
+    @apply flex hover:border-gray-600 focus:bg-gray-900 dark:focus:bg-gray-100 dark:focus:text-gray-900 transition-all duration-200 ease-out focus:border-gray-900 focus:text-gray-50 gap-1 items-center text-sm font-medium rounded border py-1 px-2;
   }
 }

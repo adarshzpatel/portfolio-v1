@@ -1,43 +1,11 @@
 import { LinkIcon } from "@heroicons/react/solid";
 import projectData from "../data/projectData"
+
 function projects() {
   return (
     <section id="projects" className="p-4">
-      <div className="">
-        <h1 className="text-2xl font-bold mb-4">Projects</h1>
-        {/* Project Container */}
-        <div className="grid grid-cols-1 w-full flex-1 justify-center gap-2  ">
-          {projectData.map((project) => (
-            <div
-              key={project.id}
-              className=" grid grid-cols-2 p-4 gap-4 justify rounded transition-all duration-300 ease-out hover:shadow-2xl hover:rounded-lg"
-            >
-              <div className="bg-gray-500  cols-span-1 h-52  rounded "></div>
-              <div className=''>
-
-              <h1 className="font-semibold text-2xl mt-4">{project.title}</h1>
-              <ul className="flex gap-2 my-2">
-                {project.tech.map((tag) => (
-                  <div className="tag" id={tag.toLowerCase()} key={tag}>
-                    {tag}
-                  </div>
-                ))}
-              </ul>
-              <p className="text-sm">{project.description}</p>
-              <div className="flex gap-2  items-center w-full mt-4">
-                <button className="btn-icon">
-                  <LinkIcon className="h-6 w-6" /> View Website
-                </button>
-                <button className="btn-icon">
-                  <GithubIcon className="h-6 fill-current w-6" /> View Code
-                </button>
-              </div>
-            </div>
-                </div>
-          ))}
-        </div>
-      </div>
-      </section>
+     
+    </section>
     );
 }
 

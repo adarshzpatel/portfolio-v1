@@ -1,14 +1,7 @@
 import { ArrowSmRightIcon } from "@heroicons/react/solid";
-import { Canvas } from "@react-three/fiber";
-import {
-  MeshWobbleMaterial,
-  OrbitControls,
-  OrthographicCamera,
-  Shadow,
-  softShadows,
-} from "@react-three/drei";
-import { useRef } from "react";
-import { DirectionalLightShadow } from "three";
+import { motion } from "framer-motion";
+import ThreeJSModel from "../components/ThreeJSModel";
+
 const technologies = [
   "Javascript ( ES6+ )",
   "React",
@@ -17,49 +10,37 @@ const technologies = [
   "TailwindCss",
   "Framer Motion",
 ];
+const variants = {
+  hidden: { opacity: 0, x: 0, y: 20 },
+  enter: { opacity: 1, x: 0, y: 20 },
+  exit: { opacity: 0, x: 0, y: 20 },
+};
 
-function Box() {
-  const ref = useRef();
-
-  return (
-    <mesh position={[0, 0, 0]}>
-      <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
-      <MeshWobbleMaterial
-        attach="material"
-      color='cyan'
-        factor={1} // Strength, 0 disables the effect (default=1)
-        speed={2} // Speed (default=1)
-      />
-    </mesh>
-  );
-}
+const Layout = ({ children, title }) => (
+  <motion.div
+    initial="hidden"
+    animate="enter"
+    exit="exit"
+    variants={variants}
+    transition={{ duration: 0.4, type: "easeInOut" }}
+    style={{ position: "relative" }}
+  >
+    {children}
+  </motion.div>
+);
 
 export const HomePage = () => {
   return (
+    <Layout>
     <div className="p-4 ">
-      <div className="grid grid-cols-2 md:grid-cols-3 items-center">
-        <div className="py-24">
+      <div className="grid grid-cols-2 md:grid-cols-3  items-center">
+        <div className="py-24 whitespace-nowrap">
           <h1 className="font-bold  leading-relaxed text-4xl">Adarsh Patel</h1>
           <p className="font-mono text-primary-500">Designer / Developer </p>
         </div>
         <div className="md:col-span-2 h-full">
           {/* Three Js */}
-          <Canvas camera={{ position: [2, 2, 2] }}>
-            <directionalLight position={[0, 10, 0]} />
-            <ambientLight intensity={0.3} />
-            <pointLight position={[0, 10, 0]} />
-            <OrbitControls />
-            <Box />
-            <Shadow
-              position={[0, -1, 0]}
-              rotation={[-Math.PI / 2, 0, 0]}
-              scale={3}
-              color="black" // Color (default:black)
-              colorStop={0} // First gradient-stop (default:0)
-              opacity={0.4} // Alpha (default:0.5)
-              fog={false} // Reacts to fog (default=false)
-            />
-          </Canvas>
+          <ThreeJSModel />
         </div>
       </div>
       <div>
@@ -75,7 +56,6 @@ export const HomePage = () => {
             , a self-taught web developer who loves designing digital stuff that
             live on internet
           </p>
-
           <p className="pt-2">
             Currently I am a 2nd year student pursuing B.Tech in
             <span className="dark:text-primary-400 border-primary-500 text-primary-500">
@@ -94,7 +74,7 @@ export const HomePage = () => {
           </p>
           <br />
           <p>Here are the few technologies I have working on recently : </p>
-          <ul className="grid grid-cols-2 mt-2 max-w-md">
+          <ul className="grid grid-cols-2 font-mono mt-2 max-w-md">
             {technologies.map((item) => (
               <li key={item} className="flex items-center gap-2">
                 <ArrowSmRightIcon className="h-4 w-4 text-primary-500" /> {item}
@@ -104,6 +84,7 @@ export const HomePage = () => {
         </div>
       </div>
     </div>
+    </Layout>
   );
 };
 
