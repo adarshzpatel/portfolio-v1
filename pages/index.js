@@ -1,5 +1,4 @@
 import { ArrowSmRightIcon } from "@heroicons/react/solid";
-import { motion } from "framer-motion";
 import ThreeJSModel from "../components/ThreeJSModel";
 
 const technologies = [
@@ -10,28 +9,12 @@ const technologies = [
   "TailwindCss",
   "Framer Motion",
 ];
-const variants = {
-  hidden: { opacity: 0, x: 0, y: 20 },
-  enter: { opacity: 1, x: 0, y: 20 },
-  exit: { opacity: 0, x: 0, y: 20 },
-};
 
-const Layout = ({ children, title }) => (
-  <motion.div
-    initial="hidden"
-    animate="enter"
-    exit="exit"
-    variants={variants}
-    transition={{ duration: 0.4, type: "easeInOut" }}
-    style={{ position: "relative" }}
-  >
-    {children}
-  </motion.div>
-);
+
 
 export const HomePage = () => {
   return (
-    <Layout>
+    
     <div className="p-4 ">
       <div className="grid grid-cols-2 md:grid-cols-3  items-center">
         <div className="py-24 whitespace-nowrap">
@@ -84,7 +67,7 @@ export const HomePage = () => {
         </div>
       </div>
     </div>
-    </Layout>
+
   );
 };
 

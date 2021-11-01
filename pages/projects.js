@@ -1,12 +1,56 @@
-import { LinkIcon } from "@heroicons/react/solid";
-import projectData from "../data/projectData"
-
+import projectData from "../data/projectData";
+import LinkIcon from "@heroicons/react/solid/LinkIcon";
+import Link from 'next/link'
 function projects() {
   return (
-    <section id="projects" className="p-4">
-     
+    <section className="p-4">
+      <h1 className="font-bold text-center sm:text-left text-2xl leading-loose tracking-wider uppercase mb-4">
+        Projects
+      </h1>
+      <div className="flex flex-col gap-8 items-center ">
+        {projectData.map((project) => (
+          <div
+            className="dark:hover:border-gray-100  border group max-w-xs sm:max-w-none w-full sm:items-center overflow-hidden border-gray-300 dark:border-gray-600 hover:border-gray-900 duration-300 ease-out transform hover:scale-[1.01] hover:shadow-xl transition-transform flex flex-col sm:flex-row  rounded-lg"
+            key={project.id}
+          >
+            <div className="max-w-xs ">
+                <img
+                  src={project.img}
+                  alt={project.title}
+                  className=""
+                />
+            </div>
+            <div className="grid gap-2 p-4">
+              <h2 className="font-semibold text-gray-800 dark:text-gray-100 text-xl">
+                {project.title}
+              </h2>
+              <ul className="flex gap-1">
+                {project.tech.map((item) => (
+                  <li key={item} className='tag' id={item.toLowerCase()}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-gray-600 text-sm dark:text-gray-400 ">{project.description}</p>
+              <div className="flex gap-2 mt-2 justify-between sm:justify-start">
+                <Link href={project.link}  >
+                  <a className="btn-icon" target='_blank' rel="noreferrer noopener" >
+                    <LinkIcon className="w-5 h-5" /> View Website
+                    </a>
+                </Link>
+                <Link href={project.github} className="btn-icon">
+                <a className="btn-icon" target='_blank' rel="noreferrer noopener">
+                  <GithubIcon className="w-5 h-5 fill-current" />
+                  View Code
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
-    );
+  );
 }
 
 export default projects;

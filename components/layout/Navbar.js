@@ -37,13 +37,16 @@ function Navbar() {
                 transition={{ delay: i * 0.1 }}
                 className="group "
                 >
+                  <Link 
+                  href={item.href} > 
+                  
                   <a
                     onClick={() => setOpen(false)}
-                    href={item.href}
                     className=" hover:text-primary-500 dark:text-gray-400  hover:font-semibold  transition-all duration-100 ease-out p-2"
                     >
                     {item.name}
                   </a>
+                      </Link>
                 </motion.li>
               ))}
             </ul>

@@ -4,40 +4,20 @@
 @tailwind utilities;
 
 
-html{
-    scroll-behavior : smooth; scroll-behavior : smooth;
-}
+
 
 @layer base{
- 
+  
     body {
-      @apply bg-gray-50  w-screen overflow-x-hidden min-h-screen text-gray-900 dark:text-gray-100 dark:bg-gray-900 transition-colors ease-in-out;
+      @apply  bg-gray-50  text-gray-900 dark:text-gray-100 dark:bg-gray-900 transition-colors ease-in-out;
     }
-    /* .snap-container{
-        scroll-snap-type: y mandatory ;
-        overflow-y:scroll;
-        scroll-behavior : smooth;
-    } */
-    /* section {
-      @apply  w-full p-4  pt-20  max-w-screen-lg mx-auto;
-      scroll-snap-align:start;
-    }
-    section > h1{
-        @apply text-2xl font-bold leading-relaxed mb-4 ;
-    } */
-    
-    /* #hero{
-      @apply lg:p-0;
-    } */
-
-
   }
 
 @layer components{
   .tag{
     @apply py-1 px-2 text-gray-900 tracking-wider rounded bg-gray-400  text-xs font-medium;
   }
-  #redux{
+  #reduxtoolkit{
     @apply bg-purple-400 dark:bg-purple-600 dark:text-purple-50;
   }
   #react{
@@ -50,6 +30,8 @@ html{
     @apply bg-green-400 dark:bg-green-600 dark:text-green-50;
   }
   .btn-icon{
-    @apply flex hover:border-gray-600 focus:bg-gray-900 dark:focus:bg-gray-100 dark:focus:text-gray-900 transition-all duration-200 ease-out focus:border-gray-900 focus:text-gray-50 gap-1 items-center text-sm font-medium rounded border py-1 px-2;
+    @apply flex hover:border-gray-900 focus:bg-gray-900 dark:focus:bg-gray-100  dark:focus:text-gray-900 transition-all border-gray-500 duration-300 ease-out focus:border-gray-900 focus:text-gray-50 gap-1 items-center text-sm  rounded border py-1 px-2;
+    @apply transform hover:scale-105;
+    @apply dark:hover:border-gray-100
   }
 }

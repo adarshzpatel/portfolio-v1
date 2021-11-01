@@ -3,9 +3,9 @@ const projects = [
         id:1,
         title:'CryptoLand',
         link:'https://cryptolandapp.netlify.app/',
-        description:'View the full list of all active cryptocurrencies,exchanges,news and details.',
-        tech:['React','TailwindCss','Redux'],
-        img:'/assets/cryptoland.jpg',
+        description:'View the full list of all active cryptocurrencies, exchanges, news and details.',
+        tech:['React','TailwindCss','ReduxToolkit'],
+        img:'/assets/cryptoland.png',
         github:'https://github.com/adarshzpatel/crypto-app'
     },
     {
@@ -14,7 +14,7 @@ const projects = [
         link:'https://react-movie-searchx.netlify.app/',
         description:'Search Movies & Actors , and view movie details.',
         tech:['React','TailwindCss','ContextApi'],
-        img:'/assets/movie.jpg',
+        img:'/assets/movie.png',
         github:'https://github.com/adarshzpatel/movie-search-app-reactjs'
     },
     {
@@ -23,7 +23,7 @@ const projects = [
         link:'https://tic-tac-toe-react-tailwindcss.netlify.app/',
         description:'Search Movies & Actors , and view movie details.',
         tech:['React','TailwindCss','ContextApi'],
-        img:'/assets/tictactoe.jpg',
+        img:'/assets/tic-tac-toe.png',
         github:'https://github.com/adarshzpatel/react-tic-tac-toe'
     },
 

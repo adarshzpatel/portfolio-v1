@@ -4,7 +4,7 @@ import { Suspense, useEffect, useRef } from "react";
 
 function Box() {
   const boxRef = useRef(null);
-  useFrame((state,delta)=>{ 
+  useFrame(()=>{ 
     const box = boxRef.current
     box.rotation.x +=0.01
     box.rotation.y +=0.01
@@ -12,7 +12,6 @@ function Box() {
     box.scale.y = box.scale.y < 1.5  ? box.scale.y + 0.01 : box.scale.y -0.01; 
     box.scale.x = box.scale.x < 1.5  ? box.scale.x + 0.01 : box.scale.x -0.01; 
   
-    
   })
   return (
     <mesh ref={boxRef}  position={[0, 0, 0]}>
