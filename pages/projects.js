@@ -3,7 +3,7 @@ import LinkIcon from "@heroicons/react/solid/LinkIcon";
 import Link from 'next/link'
 function projects() {
   return (
-    <section className="p-4">
+    <section className="p-4 ">
       <h1 className="font-bold text-center sm:text-left text-2xl leading-loose tracking-wider uppercase mb-4">
         Projects
       </h1>
