@@ -1,12 +1,11 @@
 import projectData from "../data/projectData";
 import LinkIcon from "@heroicons/react/solid/LinkIcon";
 import Link from 'next/link'
+import PageHeading from "../components/elements/PageHeading";
 function projects() {
   return (
     <section className="p-4 ">
-      <h1 className="font-bold text-center sm:text-left text-2xl leading-loose tracking-wider uppercase mb-4">
-        Projects
-      </h1>
+     <PageHeading>Projects</PageHeading>
       <div className="flex flex-col gap-8 items-center ">
         {projectData.map((project) => (
           <div
