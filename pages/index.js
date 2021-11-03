@@ -1,5 +1,5 @@
 import { ArrowSmRightIcon } from "@heroicons/react/solid";
-import ThreeJSModel from "../components/ThreeJSModel";
+import ThreeJSModel from "../components/elements/ThreeJSModel";
 import Sparkles from '../components/sparkles/Sparkles'
 const technologies = [
   "Javascript ( ES6+ )",
@@ -16,6 +16,8 @@ export const HomePage = () => {
   return (
     
     <div className="p-4 relative">
+     
+
       <div className='absolute top-32 right-24 md:right-48 bg-primary-600 bg-blend-screen h-24 w-24  rounded-full blur-3xl ' />
       <div className='absolute -bottom-16 -left-8 md:right-44 bg-primary-600 bg-blend-   h-24 w-24  rounded-full blur-3xl ' />
       <div className="grid grid-cols-2 md:grid-cols-3  items-center">

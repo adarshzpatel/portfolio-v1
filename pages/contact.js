@@ -1,4 +1,4 @@
-import ContactItem from "../components/ContactItem"
+import ContactItem from "../components/elements/ContactItem"
 import PageHeading from "../components/elements/PageHeading"
 import { MailIcon } from "@heroicons/react/solid"
 
@@ -61,7 +61,7 @@ function contact() {
     <PageHeading>Connect with me</PageHeading>
     <div className='text-gray-700'>
     </div>
-    <div className='flex  gap-4 grid-cols-5 flex-wrap'>
+    <div className='flex justify-center md:justify-start  gap-4 grid-cols-5 flex-wrap'>
      <ContactItem Icon={EmailIcon} name='Email' href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpbDSHfckMkwdwKcdzBhJrfjglqvrkWRsHcxgtXlhxKZmGXkxRCDRgjjlJFQQfZZZhwQB' />
      <ContactItem Icon={TwitterIcon} name='Twitter' href='https://twitter.com/adarshzpatel' />
      <ContactItem Icon={GithubIcon} name='Github' href='https://github.com/adarshzpatel' />

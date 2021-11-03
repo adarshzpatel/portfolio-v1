@@ -2,7 +2,7 @@ import { ThemeProvider } from "next-themes";
 import "../styles/globals.css";
 import Navbar from "../components/layout/Navbar";
 import Container from "../components/layout/Container";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 // const variants = {
 //   hidden: { opacity: 0, x: 0, y: 20 },
@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps, router }) {
           <Navbar />
         {/* <AnimateLayout> */}
           <Container>
-            <Component {...pageProps} key={router.route} />
+                      <Component {...pageProps} key={router.route} />
           </Container>
         {/* </AnimateLayout> */}
       </AnimatePresence>

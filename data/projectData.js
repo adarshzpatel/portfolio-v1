@@ -3,7 +3,7 @@ const projects = [
         id:1,
         title:'CryptoLand',
         link:'https://cryptolandapp.netlify.app/',
-        description:'View the full list of all active cryptocurrencies, exchanges, news and details.',
+        description:'One place for crypto coins,news,exhanges and stats.',
         tech:['React','TailwindCss','ReduxToolkit'],
         img:'/assets/cryptoland.png',
         github:'https://github.com/adarshzpatel/crypto-app'
@@ -21,7 +21,7 @@ const projects = [
         id:3,
         title:'Tic Tac Toe',
         link:'https://tic-tac-toe-react-tailwindcss.netlify.app/',
-        description:'Search Movies & Actors , and view movie details.',
+        description:'Classic Tic-Tac-Toe Game.',
         tech:['React','TailwindCss','ContextApi'],
         img:'/assets/tic-tac-toe.png',
         github:'https://github.com/adarshzpatel/react-tic-tac-toe'
