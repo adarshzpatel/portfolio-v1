@@ -6,7 +6,7 @@ import { MailIcon } from "@heroicons/react/solid"
 const GithubIcon = ({...props}) =>(
   <svg
   {...props}
-  className='h-16 w-16 text-gray-500 transition-colors duration-300 ease-out group-hover:text-gray-800 fill-current'
+  className='h-16 w-16 text-gray-500 dark:group-hover:text-gray-50 transition-colors duration-300 ease-out group-hover:text-gray-800 fill-current'
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 24 24"
   fill="current"

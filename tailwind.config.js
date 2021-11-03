@@ -25,6 +25,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('tailwindcss-scroll-snap')
+    require('tailwind-scrollbar')
   ],
 }

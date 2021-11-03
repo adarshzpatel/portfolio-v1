@@ -2,14 +2,15 @@ import { LinkIcon } from "@heroicons/react/solid";
 import Link from 'next/link'
 import Image from 'next/image'
 
-function ProjectCard({project}) {
+function ProjectCard({project,...props}) {
   
   return (
     <div
-    className="dark:hover:border-gray-100  border group max-w-xs sm:max-w-none w-full sm:items-center overflow-hidden border-gray-300 dark:border-gray-600 hover:border-gray-900 duration-300 ease-out transform hover:scale-[1.01] hover:shadow-xl transition-transform flex flex-col sm:flex-row  rounded-lg"
+    {...props}
+    className="dark:hover:border-gray-100 bg-white border dark:bg-gray-800  group max-w-xs sm:max-w-none w-full sm:items-center overflow-hidden border-gray-300 dark:border-gray-600 hover:border-gray-900 duration-300 ease-out transform hover:scale-[1.01] hover:shadow-xl transition-transform flex flex-col sm:flex-row  rounded-xl"
     key={project.id}
   >
-    <div className="relative h-[11.2rem] w-full max-w-xs">
+    <div className="relative h-[11.2rem] w-full max-w-xs rounded-xl overflow-hidden">
       
         <Image
           src={project.img}
