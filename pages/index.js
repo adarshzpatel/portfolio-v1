@@ -1,4 +1,5 @@
 import { ArrowSmRightIcon } from "@heroicons/react/solid";
+import { motion } from "framer-motion";
 import ThreeJSModel from "../components/elements/ThreeJSModel";
 import Sparkles from '../components/sparkles/Sparkles'
 const technologies = [
@@ -14,16 +15,20 @@ const technologies = [
 
 export const HomePage = () => {
   return (
+    <motion.div
+    key='homepage'
+    animate={{y:[60,0],opacity:[0,1]}}
+    exit={{y:60,opacity:0}}
     
-    <div className="p-4 relative">
+    className="p-4 relative">
       <div className='absolute top-32 right-24 md:right-48 bg-primary-600 bg-blend-screen h-24 w-24  rounded-full blur-3xl ' />
       <div className='absolute -bottom-16 -left-8 md:right-44 bg-primary-600 bg-blend-   h-24 w-24  rounded-full blur-3xl ' />
-      <div className="grid grid-cols-2 md:grid-cols-3  items-center">
+      <div className="grid grid-cols-3  items-center">
         <div className="py-40 whitespace-nowrap">
           <h1 className="font-bold  leading-relaxed text-4xl"><Sparkles>Adarsh Patel</Sparkles></h1>
           <p className="font-mono text-primary-500">Designer / Developer </p>
         </div>
-        <div className="md:col-span-2 h-full">
+        <div className="col-span-2 h-full">
           {/* Three Js */}
           <ThreeJSModel />
         </div>
@@ -71,7 +76,7 @@ export const HomePage = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
 
   );
 };

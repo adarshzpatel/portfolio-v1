@@ -55,6 +55,7 @@ const LinkedInIcon = ({...props}) => (
 
 
 
+
 function contact() {
   return (
     <div className='p-4'>
@@ -62,10 +63,12 @@ function contact() {
     <div className='text-gray-700'>
     </div>
     <div className='flex justify-center md:justify-start  gap-4 grid-cols-5 flex-wrap'>
-     <ContactItem Icon={EmailIcon} name='Email' href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpbDSHfckMkwdwKcdzBhJrfjglqvrkWRsHcxgtXlhxKZmGXkxRCDRgjjlJFQQfZZZhwQB' />
-     <ContactItem Icon={TwitterIcon} name='Twitter' href='https://twitter.com/adarshzpatel' />
-     <ContactItem Icon={GithubIcon} name='Github' href='https://github.com/adarshzpatel' />
-     <ContactItem Icon={LinkedInIcon} name='LinkedIn' href='https://www.linkedin.com/in/adarsh-patel-b08a741b8/' />
+   
+      <ContactItem i={1} Icon={EmailIcon} name='Email' href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpbDSHfckMkwdwKcdzBhJrfjglqvrkWRsHcxgtXlhxKZmGXkxRCDRgjjlJFQQfZZZhwQB' />
+    
+     <ContactItem i={2} Icon={TwitterIcon} name='Twitter' href='https://twitter.com/adarshzpatel' />
+     <ContactItem i={3}Icon={GithubIcon} name='Github' href='https://github.com/adarshzpatel' />
+     <ContactItem i={4} Icon={LinkedInIcon} name='LinkedIn' href='https://www.linkedin.com/in/adarsh-patel-b08a741b8/' />
 
     </div>
     </div>

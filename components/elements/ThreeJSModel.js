@@ -17,7 +17,7 @@ function Box() {
   
   })
   return (
-    <mesh ref={boxRef} fog={false}  position={[0, 0, 0]}>
+    <mesh ref={boxRef}  position={[0, 0, 0]}>
       <tetrahedronBufferGeometry  attach="geometry" args={[1, 1, 1]} />
       <meshDepthMaterial />
       <MeshWobbleMaterial
