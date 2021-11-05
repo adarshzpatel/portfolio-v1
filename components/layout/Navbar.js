@@ -81,7 +81,7 @@ function Navbar() {
               >
                 <Link href={item.href}>
                 <a
-                  className="hover:bg-gray-300 hover:text-gray-900  hover:font-medium dark:hover:text-gray-100 transition-all duration-100 ease-out dark:hover:bg-gray-700 p-1"
+                  className="hover:bg-gray-200 hover:text-gray-900  hover:font-medium dark:hover:text-gray-100 transition-all duration-100 ease-out dark:hover:bg-gray-800 p-2  rounded-md"
                 >
                   {item.name}
                 </a>
