@@ -79,12 +79,13 @@ function Navbar() {
                 transition={{ delay: i * 0.1 }}
                 className="group"
               >
+                <Link href={item.href}>
                 <a
-                  href={item.href}
-                  className="hover:border-b-2 hover:text-gray-900 hover:border-gray-500 hover:font-medium dark:hover:text-gray-100 transition-all duration-100 ease-out dark:hover:border-gray-200 p-1"
+                  className="hover:bg-gray-300 hover:text-gray-900  hover:font-medium dark:hover:text-gray-100 transition-all duration-100 ease-out dark:hover:bg-gray-700 p-1"
                 >
                   {item.name}
                 </a>
+                </Link>
               </motion.li>
             ))}
           </ul>
