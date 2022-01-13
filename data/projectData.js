@@ -31,7 +31,7 @@ const projects = [
         title:'Gif Portal built on Solana',
         link:'https://one-piece-gifs.netlify.app/',
         description:'Gif Portal where you can add your gif to the solana blockchain.',
-        tech:['React','Web3.0','Solana'],
+        tech:['React','Solana'],
         img:'/assets/one-piece-gif.png',
         github:'https://github.com/adarshzpatel/gif-portal-starter'
     },

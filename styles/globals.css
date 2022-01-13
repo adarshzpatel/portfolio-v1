@@ -29,6 +29,9 @@
   #contextapi{
     @apply bg-green-400 dark:bg-green-600 dark:text-green-50;
   }
+  #solana{
+    @apply bg-yellow-400 text-gray-900;
+  }
   .btn-icon{
     @apply flex hover:border-gray-900 focus:bg-gray-900 dark:focus:bg-gray-100  dark:focus:text-gray-900 transition-all border-gray-500 duration-300 ease-out focus:border-gray-900 focus:text-gray-50 gap-1 items-center text-sm  rounded border py-1 px-2;
     @apply transform hover:scale-105;
