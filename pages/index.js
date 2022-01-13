@@ -44,7 +44,7 @@ export const HomePage = () => {
               Adarsh Patel
             </span>{" "}
             , a self-taught web developer who loves designing digital stuff that
-            live on internet
+            live on internet and currently interested and exploring web 3.0.
           </p>
           <p className="pt-2">
             Currently I am a 2nd year student pursuing B.Tech in
