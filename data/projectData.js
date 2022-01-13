@@ -26,6 +26,16 @@ const projects = [
         img:'/assets/tic-tac-toe.png',
         github:'https://github.com/adarshzpatel/react-tic-tac-toe'
     },
+    {
+        id:4,
+        title:'Gif Portal built on Solana',
+        link:'https://one-piece-gifs.netlify.app/',
+        description:'Gif Portal where you can add your gif to the solana blockchain.',
+        tech:['React','Web3.0','Solana'],
+        img:'/assets/one-piece-gif.png',
+        github:'https://github.com/adarshzpatel/gif-portal-starter'
+    },
+
 
 ]
 
