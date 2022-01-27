@@ -9,6 +9,7 @@ const technologies = [
   "Firebase",
   "TailwindCss",
   "Framer Motion",
+  "Web3"
 ];
 
 
@@ -43,8 +44,8 @@ export const HomePage = () => {
             <span className="dark:text-primary-400  border-primary-500 text-primary-500">
               Adarsh Patel
             </span>{" "}
-            , a self-taught web developer who loves designing digital stuff that
-            live on internet and currently interested and exploring web 3.0.
+            , a self-taught web developer who loves designing and building digital stuff that
+            live on internet and currently learning web3 developement.
           </p>
           <p className="pt-2">
             Currently I am a 2nd year student pursuing B.Tech in

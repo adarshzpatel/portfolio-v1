@@ -4,7 +4,6 @@ import { Suspense, useRef } from "react";
 
 function Box() {
   const boxRef = useRef(null);
-  console.log(boxRef.current)
   useFrame(()=>{ 
     const box = boxRef.current
 

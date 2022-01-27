@@ -8,14 +8,11 @@ import { AnimatePresence } from "framer-motion";
 function MyApp({ Component, pageProps, router }) {
   return (
     <ThemeProvider attribute="class" enableSystem={false}>
-      <AnimatePresence exitBeforeEnter initial={true}>
+
           <Navbar />
- 
           <Container>
             <Component {...pageProps} key={router.route} />
           </Container>
-  
-      </AnimatePresence>
     </ThemeProvider>
   );
 }
