@@ -3,13 +3,17 @@ import { motion } from "framer-motion";
 import ThreeJSModel from "../components/elements/ThreeJSModel";
 import Sparkles from '../components/sparkles/Sparkles'
 const technologies = [
-  "Javascript ( ES6+ )",
-  "React",
-  "Next.js",
-  "Firebase",
-  "TailwindCss",
+  "JavaScript / TypeScript",
+  "Git / GitHub",
+  "React.js / Next.js",
+  "Solidity / Smart Contracts",
+  "Tailwindcss",
   "Framer Motion",
-  "Web3"
+  "ethers.js",
+  "Java",
+  "Python",
+  "Html/Css",
+
 ];
 
 
@@ -44,8 +48,8 @@ export const HomePage = () => {
             <span className="dark:text-primary-400  border-primary-500 text-primary-500">
               Adarsh Patel
             </span>{" "}
-            , a self-taught web developer who loves designing and building digital stuff that
-            live on internet and currently learning web3 developement.
+            , a digital craftsman who loves crafting & coding stuff that
+            he wants. I love to explore new technologies , currently I am exploring and learning web3 & blockchain. 
           </p>
           <p className="pt-2">
             Currently I am a 2nd year student pursuing B.Tech in
@@ -68,9 +72,9 @@ export const HomePage = () => {
           Skills & Technologies
         </h1>
           <p>Here are the few technologies I have working on recently : </p>
-          <ul className="grid grid-cols-2 font-mono mt-2 max-w-md">
+          <ul className="grid grid-cols-2 font-mono mt-2 max-w-xl">
             {technologies.map((item) => (
-              <li key={item} className="flex items-center gap-2">
+              <li key={item} className="flex whitespace-nowrap items-center gap-2">
                 <ArrowSmRightIcon className="h-4 w-4 text-primary-500" /> {item}
               </li>
             ))}
