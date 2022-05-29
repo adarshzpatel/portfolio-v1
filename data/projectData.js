@@ -1,8 +1,8 @@
 const projects = [,
     {
         id:1,
-        title:'Klass NFT [Under Development]',
-        link:'https://klass5k.vercel.app/',
+        title:'NFT Landing Page',
+        link:'https://www.projectklass.xyz/',
         description:'A collection of 5555 unique stick figure nfts.',
         tech:['React','TailwindCss','NFT','Web3'],
         img:'/assets/klass.png',
